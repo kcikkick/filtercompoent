@@ -1,0 +1,19 @@
+{
+  "name": "ng-filter-props",
+  "version": "0.1.0",
+  "description": "it is a anjularjs directive to dynamic filter.",
+  "main": "filterComonent.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "filter",
+    "angularjs",
+    "directive"
+  ],
+  "dependencies": {
+	"lodash": "^4.17.2"
+  },
+  "author": "nickkcik",
+  "license": "MIT"
+}
