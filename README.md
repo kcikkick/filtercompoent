@@ -54,11 +54,11 @@ other attribute is mapping to the above config key.
 <pre><code>  
         $scope.carrier_info=[
         {
-            'vesselName':"OOCL",
-            'filterKey':'oocl'
+            'vesselName':"ABC",
+            'filterKey':'abc'
         },{
-            'vesselName':"COSCON",
-            'filterKey':'coscon'
+            'vesselName':"DEF",
+            'filterKey':'def'
         }]
 </pre></code>
 
@@ -89,7 +89,7 @@ option , base on mappingconfig,and get the final filter result from orginal data
         })
 </pre></code>
 
-###columnnumber
+### columnnumber
 
 init filter component layout
 
