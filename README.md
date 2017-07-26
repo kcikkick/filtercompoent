@@ -27,7 +27,7 @@ HTML
 
 ## Documentation - attribute
 
-###config
+### config
 mandatory field  and the type is Array,init filter component
 
 <pre><code>        
@@ -47,7 +47,7 @@ mandatory field  and the type is Array,init filter component
         ]
 </pre></code>
 
-###data
+### data
 mandatory field  and the type is Array,init filter data,
 eg:filterKey is every filter record unique key.
 other attribute is mapping to the above config key.
@@ -63,7 +63,7 @@ other attribute is mapping to the above config key.
 </pre></code>
 
 
-###mappingconfig
+### mappingconfig
 
 option field  and the type is Object,init filter data,
 
@@ -79,7 +79,7 @@ key: get the final filter result base on the key
 </pre></code>
 
 
-###callresults
+### callresults
 option , base on mappingconfig,and get the final filter result from orginal data.
 
 <pre><code>  
