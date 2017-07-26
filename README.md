@@ -1,6 +1,12 @@
 package ng-filter-props
 =
 
+Simulate Spotfire filter component,to  implement dynamic filter.
+
+
+
+## Installation
+
 ```html
 <script src="/node_modules/ng-filter-props/filterComonent.js"></script>
 ```
@@ -10,14 +16,14 @@ Or `require('ng-filter-props')` from your code.
 
 
 ## Example
-![github](/static/images/filter_main.gif);
+![github](/static/images/filter_main.gif)
 
 HTML
-<pre><code>
+```html
+
     <ng-filters-props config="filterConfig" data="carrier_info"
                mappingconfig="mappingConfig" columnnumber="4"></ng-filters-props>
-
-</code></pre>
+```
 
 ## Documentation
 
