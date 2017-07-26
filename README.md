@@ -29,9 +29,10 @@ HTML
 
 ###config
 mandatory field  and the type is Array,init filter component
-<p>
-     $scope.filterConfig=[
-           {
+
+<pre><code>        
+    $scope.filterConfig=[
+            {
                 key:'vesselName',//mandatory , match key
                 scopeKey:'vesselNamesList',//option ,display List
                 allKey:'isAllVesselSelected',//option, Listen weather select All
@@ -43,27 +44,24 @@ mandatory field  and the type is Array,init filter component
                 filterDisplayLength:'vesselLength',//option ,show the active filter list length
                 filterTitle:'Vessel Name',//option ,show the filter title ,default will show key name
             } 
-     ]
-</p>
-
+        ]
+</pre></code>
 
 ###data
 mandatory field  and the type is Array,init filter data,
 eg:filterKey is every filter record unique key.
 other attribute is mapping to the above config key.
-
-<p>
-     $scope.carrier_info=[
+<pre><code>  
+        $scope.carrier_info=[
         {
             'vesselName':"OOCL",
             'filterKey':'oocl'
         },{
             'vesselName':"COSCON",
             'filterKey':'coscon'
-        }
-     ]
+        }]
+</pre></code>
 
-</p>
 
 ###mappingconfig
 
@@ -72,24 +70,24 @@ option field  and the type is Object,init filter data,
 key:
 filterKey:the fitler record unique key,
 key: get the final filter result base on the key
+<pre><code>  
 
-<p>
- $scope.mappingConfig={
+        $scope.mappingConfig={
             key:"vesselName",
             filterKey:"filterKey"
-    };
-</p>
+        };
+</pre></code>
 
 
 ###callresults
 option , base on mappingconfig,and get the final filter result from orginal data.
 
-<p>
-$scope.$on('callFilterCompoentResults', function(event, data){
-            //console.log('-------------------------------');
-            console.log(data);
-   })
-</p>
+<pre><code>  
+        $scope.$on('callFilterCompoentResults', function(event, data){
+                //console.log('-------------------------------');
+                console.log(data);
+        })
+</pre></code>
 
 ###columnnumber
 
