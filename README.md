@@ -25,10 +25,9 @@ HTML
                mappingconfig="mappingConfig" columnnumber="4"></ng-filters-props>
 ```
 
-## Documentation
+## Documentation - attribute
 
-config
-=============
+###config
 mandatory field  and the type is Array,init filter component,
 
 <pre><code>
@@ -49,10 +48,11 @@ mandatory field  and the type is Array,init filter component,
 
 </code></pre>
 
-data
-=============
-mandatory field  and the type is Array,init filter data,
 
+###data
+mandatory field  and the type is Array,init filter data,
+eg:filterKey is every filter record unique key.
+other attribute is mapping to the above config key.
 <pre><code>
      $scope.carrier_info=[
         {
@@ -66,25 +66,35 @@ mandatory field  and the type is Array,init filter data,
 
 </code></pre>
 
-mappingconfig
-=============
+###mappingconfig
+
 option field  and the type is Object,init filter data,
 
+key:
+filterKey:the fitler record unique key,
+key: get the final filter result base on the key
+
+<pre><code>
+ $scope.mappingConfig={
+            key:"vesselName",
+            filterKey:"filterKey"
+    };
+</code></pre>
 
 
-columnnumber
-=============
-init filter component layout
+###callresults
+option , base on mappingconfig,and get the final filter result from orginal data.
 
-
-callresults
-=============
 <pre><code>
 $scope.$on('callFilterCompoentResults', function(event, data){
             //console.log('-------------------------------');
             console.log(data);
    })
 </code></pre>
+
+###columnnumber
+
+init filter component layout
 
 
 
