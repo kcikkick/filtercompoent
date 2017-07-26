@@ -28,9 +28,8 @@ HTML
 ## Documentation - attribute
 
 ###config
-mandatory field  and the type is Array,init filter component,
-
-<pre><code>
+mandatory field  and the type is Array,init filter component
+<p>
      $scope.filterConfig=[
            {
                 key:'vesselName',//mandatory , match key
@@ -45,15 +44,15 @@ mandatory field  and the type is Array,init filter component,
                 filterTitle:'Vessel Name',//option ,show the filter title ,default will show key name
             } 
      ]
-
-</code></pre>
+</p>
 
 
 ###data
 mandatory field  and the type is Array,init filter data,
 eg:filterKey is every filter record unique key.
 other attribute is mapping to the above config key.
-<pre><code>
+
+<p>
      $scope.carrier_info=[
         {
             'vesselName':"OOCL",
@@ -64,7 +63,7 @@ other attribute is mapping to the above config key.
         }
      ]
 
-</code></pre>
+</p>
 
 ###mappingconfig
 
@@ -74,23 +73,23 @@ key:
 filterKey:the fitler record unique key,
 key: get the final filter result base on the key
 
-<pre><code>
+<p>
  $scope.mappingConfig={
             key:"vesselName",
             filterKey:"filterKey"
     };
-</code></pre>
+</p>
 
 
 ###callresults
 option , base on mappingconfig,and get the final filter result from orginal data.
 
-<pre><code>
+<p>
 $scope.$on('callFilterCompoentResults', function(event, data){
             //console.log('-------------------------------');
             console.log(data);
    })
-</code></pre>
+</p>
 
 ###columnnumber
 
